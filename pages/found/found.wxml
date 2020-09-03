@@ -1,0 +1,9 @@
+<!--pages/found/found.wxml-->
+<view class="outb" wx:for="{{fouList}}" wx:for-index="idx" wx:for-item="item" wx:key="*this">
+  <view class="tout">
+    <image src="{{item.img}}" mode="widthFix"></image>
+    <text>{{item.name}}</text>
+  </view>
+  <view class="fouc"><text>＋关注</text></view>
+  <text>{{item.sum}}</text>
+</view>

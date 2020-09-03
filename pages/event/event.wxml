@@ -1,0 +1,7 @@
+<!--pages/event/event.wxml-->
+<view class="container">
+  <view wx:for="{{scList.events}}" wx:for-index="idx" wx:key="*this" data-idx="{{idx}}" wx:for-item="sclist" class="cview" bindtap="showCityMess">
+    <image src="{{sclist.image}}" mode="widthFix"/>
+    <text><text class="title">名称:{{sclist.title}}</text>\n类型:{{sclist.category_name}}\n地点:{{sclist.address}}\n票价:{{sclist.fee_str}}</text>
+  </view>
+</view>

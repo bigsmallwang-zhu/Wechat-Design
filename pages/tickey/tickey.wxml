@@ -1,0 +1,7 @@
+<!--pages/tickey/tickey.wxml-->
+<view wx:for="{{views}}" wx:for-item="items" wx:for-index="idx" wx:key="*this" class="tic_list">
+  <view bindtap="showView" class="inview">
+    <image src="{{items.img}}" data-id="{{idx}}"></image>
+  </view>
+  <text class="name">景点：{{items.title}}</text><text>\n\n价格：{{items.price}}\n简介：{{items.sma_intro}}</text>
+</view>

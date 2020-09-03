@@ -1,0 +1,20 @@
+/* pages/event/event.wxss */
+.cview{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+.cview image{
+  width: 120px;
+}
+.cview>text{
+  /* border: 1px solid #ccc; */
+  width: 200px;
+  margin: auto 5px;
+  font-size: 12px;
+}
+.title{
+  font-size: 15px;
+  color: deepskyblue;
+}

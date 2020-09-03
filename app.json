@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tor/tor",
+    "pages/mine/mine",
+    "pages/tickey/tickey",
+    "pages/event/event",
+    "pages/event-detail/event-detail",
+    "pages/view/view",
+    "pages/found/found",
+    "pages/hotel/hotel"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "广州旅游小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/indexselect.png"
+      },
+      {
+        "pagePath": "pages/tor/tor",
+        "text": "导游",
+        "iconPath": "images/tor.png",
+        "selectedIconPath": "images/torselect.png"
+      },
+      {
+        "pagePath": "pages/found/found",
+        "text": "发现",
+        "iconPath": "images/fou.png",
+        "selectedIconPath": "images/fouselect.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/myselect.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,20 @@
+/* pages/hotel/hotel.wxss */
+.cview{
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+.cview>text{
+  width: 180px;
+  margin: auto 5px;
+  font-size: 12px;
+}
+.cview>image{
+  width: 200px;
+  height: 300px;
+}
+.name{
+  font-size: 20px;
+  color: deepskyblue;
+}

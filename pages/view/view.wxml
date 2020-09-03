@@ -1,0 +1,9 @@
+<!--pages/view/view.wxml-->
+<view class="tic_list">
+  <video src="{{views[id].video}}"></video>
+  <view class="cenright right">
+    <text>预约购票</text>
+  </view>
+  <text class="name">景点：{{views[id].title}}</text><text>\n价格：{{views[id].price}}\n简介：{{views[id].intro}}      </text>
+</view>
+

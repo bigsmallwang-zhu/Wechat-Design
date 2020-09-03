@@ -1,0 +1,29 @@
+.outer{
+  display: flex;
+  flex-direction: row;
+  background-color: #C03200;
+  /* border: 5px solid deepskyblue; */
+}
+.bimg{
+  width: 170px;
+}
+.timg{
+  width: 80px;
+  position: absolute;
+  top: 45px;
+  left: 30px;
+}
+.outer>text{
+  width: 200px;
+  margin: 0 5px;
+  font-size: 14px;
+}
+.title{
+  font-size: 18px;
+  color: white;
+  /* background-color: deepskyblue; */
+}
+.content>text{
+  width: 100%;
+  font-size: 14px;
+}

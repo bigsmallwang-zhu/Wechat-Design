@@ -1,0 +1,5 @@
+<!--pages/hotel/hotel.wxml-->
+<view wx:for="{{hotelList}}" wx:for-item="items" wx:for-index="idx" wx:key="*this" class="cview">
+  <image src="{{items.img}}"></image>
+  <text class="name">酒店：{{items.name}}</text><text>\n价格:{{items.price}}\n地址：{{items.addr}}</text>
+</view>

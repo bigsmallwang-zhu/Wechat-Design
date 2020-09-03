@@ -1,0 +1,8 @@
+<view class="outer">
+  <image src="{{edscList.events[id].image}}" mode="widthFix" class="bimg"></image>
+  <text><text class="title">{{edscList.events[id].title}}</text>\n时间：{{edscList.events[id].begin_time}}至{{edscList.events[id].end_time}}\n地址：{{edscList.events[id].address}}\n票价：{{edscList.events[id].price_range}}</text>
+</view>
+
+<view class="content">
+  <text>{{edscList.events[id].content}}</text>
+</view>

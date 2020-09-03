@@ -1,0 +1,33 @@
+<!--顶部导航栏-->
+<view class="nav">
+  <text>广州</text>
+  <view class="navc">
+    <view wx:for="{{tabItemsArray}}" wx:key="*this" class="tab-item {{currentTab==index ? 'on' : ''}}" data-current="{{index}}" bindtap="swichNav">{{item.name}}</view>
+  </view>
+  <view class="img" bindtap="sethidden">
+    <image src="../../images/search.png" mode="widthFix"></image>
+  </view>
+</view>
+
+<!-- 搜索框 -->
+<view class="showaginview" hidden="{{sethid}}">
+  <input type="text" bindinput="showinput" placeholder="请输入要搜索的导游信息" placeholder-class="placeset"/>
+  <button size="mini" bindtap="soupat">搜索</button>
+  <button size="mini" bindtap="btmhid">取消</button>
+</view>
+
+<!-- 团导 -->
+<view class="{{sethid?'container':'falcon'}}" wx:if="{{currentTab==0}}">
+  <view  wx:for="{{tors}}" wx:for-index="idx" wx:for-item="items" wx:key="*this" class="tors">
+    <image src="{{items.img}}" mode="widthFix"></image>
+    <text class="name">姓名：{{items.name}}</text><text>\n个人简介：{{items.per_sum}}\n电话：{{items.tel}}</text>
+  </view>
+</view>
+
+<!-- 私导 -->
+<view class="{{sethid?'container':'falcon'}}" wx:if="{{currentTab==1}}">
+  <view  wx:for="{{pertors}}" wx:for-index="idx" wx:for-item="items" wx:key="*this" class="tors">
+    <image src="{{items.img}}" mode="widthFix"></image>
+    <text class="name">姓名：{{items.name}}</text><text>\n个人简介：{{items.per_sum}}\n电话：{{items.tel}}</text>
+  </view>
+</view>

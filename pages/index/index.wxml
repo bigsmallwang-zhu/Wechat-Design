@@ -1,0 +1,35 @@
+<view class="top">
+  <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+    <swiper-item>
+      <image src='../../images/shamian.jpg' mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/tang.jpg' mode="aspectFit"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='../../images/shan.jpg' mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="container">
+  <view class="conimg">
+    <image src="../../images/rou.png" bindtap="zbview"></image>
+    <image src="../../images/hot.png" bindtap="hotel"></image>
+    <image src="../../images/tic.png" bindtap="buytic"></image>
+  </view>
+  <view class="context">
+    <text>活动页</text>
+    <text>订酒店</text>
+    <text>门票</text>
+  </view>
+  <view class="conimg">
+    <image src="../../images/pla.png"></image>
+    <image src="../../images/bus.png"></image>
+    <image src="../../images/tra.png"></image>
+  </view>
+  <view class="context">
+    <text>飞机票</text>
+    <text>汽车票</text>
+    <text>火车票</text>
+  </view>
+</view>
